@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #e6f5e6; /* Bardzo jasny, świeży odcień zieleni */
-            --accent-color: #7bb661; /* Zieleń zgaszona, pasująca do relaksu */
-            --text-color: #4a5a40;
-            --header-bg: rgba(230, 245, 230, 0.9);
+            --bg-color: #fffaf5; /* Bardzo jasny, ciepły odcień brzoskwiniowy */
+            --accent-color: hsl(16, 53%, 68%); /* Przygaszony róż/pomarańcz z logo */
+            --text-color: #5a5450;
+            --header-bg: rgba(250, 230, 214, 0.998);
         }
 
         * {
@@ -23,15 +23,14 @@
             color: var(--text-color);
             margin: 0;
             line-height: 1.7;
-            /* Bardziej zielony motyw roślinny w tle */
+            /* Jaśniejsze, czyste tło bez tekstury */
             background-image: 
-                url('https://www.transparenttextures.com/patterns/clean-gray-paper.png'),
-                radial-gradient(circle at top left, rgba(123, 182, 97, 0.10) 0%, transparent 30%),
-                radial-gradient(circle at bottom right, rgba(143, 161, 140, 0.10) 0%, transparent 30%);
+                radial-gradient(circle at top left, rgba(217, 154, 132, 0.10) 0%, transparent 30%),
+                radial-gradient(circle at bottom right, rgba(143, 161, 140, 0.025) 0%, transparent 30%);
         }
 
         header {
-            padding: 40px 20px;
+            padding: 10px 20px;
             text-align: center;
             background-color: var(--header-bg);
             position: sticky;
@@ -57,7 +56,7 @@
         }
 
         nav {
-            margin-top: 25px;
+            margin-top: 5px;
         }
 
         nav a {
@@ -76,8 +75,8 @@
 
         .container {
             max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 30px;
+            margin: 0 auto;
+            padding: 60px 30px;
         }
 
         section {
@@ -95,11 +94,11 @@
 
         .profile-image {
             flex: 1;
-            height: 350px;
-            width: 301px;
+            height: 280px;
+            width: 280px;
             text-align: center;
             border-radius: 50%; 
-            border: 15px solid white;
+            border: 3px solid rgba(218, 143, 46, 0.416);
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             overflow: hidden;
             display: inline-block;
@@ -108,7 +107,7 @@
 
         .profile-image img {
             width: 400px;
-            margin-top: -150px;
+            margin-top: -180px;
             margin-left: -91px;
         }
         
@@ -150,7 +149,7 @@
         /* Kontakt */
         .contact-box {
             background: white;
-            padding: 40px;
+            padding: 20px;
             border-radius: 20px;
             box-shadow: 0 5px 20px rgba(217, 154, 132, 0.05);
             display: inline-block;
@@ -196,6 +195,7 @@
     </div>
     <nav>
         <a href="#o-mnie">O mnie</a>
+        <a href="#jak-pracuje">JAK PRACUJĘ</a>
         <a href="#oferta">Oferta</a>
         <a href="#kontakt">Kontakt</a>
     </nav>
@@ -213,11 +213,20 @@
             </div>
             <div class="about-text">
                 <h2>O mnie</h2>
-                <p>Jestem na drugim roku szkolenia psychoterapeutycznego w <strong>Warszawskiej Szkole Psychoterapii Gestalt</strong>. Moja droga zawodowa to połączenie matematycznej logiki z głęboką empatią.</p>
-                <p>Ukończyłam studia z arteterapii na SWPS oraz Szkołę Trenerów Meritum. Na co dzień pracuję w szkole, gdzie wspieram młodych ludzi i ich rodziców w budowaniu autentycznych więzi.</p>
-                <p>Wierzę, że bezpieczna relacja to fundament, na którym można zbudować trwałą zmianę i zrozumienie własnych potrzeb.</p>
+                <p>Jestem w trakcie drugiego roku szkolenia w Warszawskiej Szkole Psychoterapii Gestalt (akredytowanej przez EAGT). Moja droga do psychoterapii prowadziła od świata logiki, przez empatię i własny rozwój  – ukończyłam matematykę na Uniwersytecie Wrocławskim, studia podyplomowe Pedagogika z arteterapią na SWPS, Szkołę Trenerów Meritum, dzięki której stałam się trenerką kompetencji miękkich. Brałam udział w licznych kursach i warsztatach, m.in. NVC (Porozumienie bez Przemocy), metodzie Lowena, Core Energetics, TRE, Kręgach Kobiet, treningach interpersonalnych i terapeutycznych.</p>
             </div>
         </div>
+    </section>
+
+    <section id="jak-pracuje">
+        <h2>JAK PRACUJĘ</h2>
+        <p>Terapia to dla mnie proces poszerzania świadomości o sobie, który prowadzi do poznania, akceptacji i zmiany. W atmosferze zaufania i bliskości możliwe staje się spotkanie z tym, co prawdziwe, a z tego miejsca zaczyna się rozwój.</p>
+        <p>W swojej pracy dbam o:</p>
+        <ul>
+            <li><strong>Bezpieczną przestrzeń:</strong> Miejsce, w którym możesz być w pełni sobą, bez lęku przed oceną.</li>
+            <li><strong>Autentyczną relację:</strong> Wierzę, że w bezpiecznym kontakcie z drugim człowiekiem najłatwiej zrozumieć własne schematy i emocje.</li>
+            <li><strong>Profesjonalizm:</strong> Pracuję zgodnie z kodeksem etycznym EAGT i poddaję swoją pracę regularnej superwizji.</li>
+        </ul>
     </section>
 
     <section id="oferta">
@@ -225,12 +234,19 @@
         
         <div class="offer-item">
             <h3>Terapia indywidualna dorosłych</h3>
-            <p>Przestrzeń dla osób szukających wsparcia w kryzysach relacyjnych, zawodowych lub pragnących lepiej zrozumieć swoje emocje i schematy działania.</p>
+            <ul>
+                <li><strong>Relacje:</strong> poczucie osamotnienia w związku, lęk przed bliskością, samotnością, trudne relacje z rodziną.</li>
+                <li><strong>Granice:</strong> trudność w mówieniu „nie”, poczucie bycia wykorzystywanym, problemy z autorytetami.</li>
+                <li><strong>Praca:</strong> chroniczne zmęczenie, wypalenie zawodowe, brak sensu w tym, co robisz.</li>
+                <li><strong>Wewnętrzny świat:</strong> niezrozumiały smutek, lęk, niskie poczucie własnej wartości lub surowe ocenianie siebie.</li>
+                <li><strong>Rodzicielstwo:</strong> bezsilność i trudne emocje w kontakcie z dzieckiem.</li>
+                <li>Osoby, które nie znają powodów swojego cierpienia i chcieliby zgłębić ten temat.</li>
+            </ul>
         </div>
 
         <div class="offer-item">
             <h3>Wsparcie dla młodych dorosłych</h3>
-            <p>Pomoc w odnalezieniu własnej drogi, budowaniu autonomii oraz radzeniu sobie z lękiem i trudnościami w bliskich relacjach.</p>
+            <li><strong>Młoda dorosłość:</strong> zagubienie na starcie w dorosłe życie, trudność z usamodzielnieniem się, szukanie swojej drogi i tożsamości.</li>
         </div>
 
         <div class="offer-item">
@@ -241,12 +257,12 @@
 
     <section id="kontakt">
         <h2>Kontakt</h2>
-        <p>Jeśli czujesz, że potrzebujesz rozmowy – zapraszam do kontaktu w bezpiecznej i pełnej akceptacji atmosferze.</p>
-        
+        <p>Zapraszam, jeśli czujesz, że możemy razem  spróbować nazwać to, co trudne i poszukać Twojej własnej drogi do zmiany.</p>
+        <p>Preferuję kontakt przez SMS lub e-mail. Odpiszę Ci w najszybszym możliwym terminie. </p>
         <div class="contact-box">
-            <p><span class="dot"></span> Telefon: [Twój numer]</p>
-            <p><span class="dot"></span> Email: [Twój adres email]</p>
-            <p><span class="dot"></span> Miejsce: Warszawa / Online</p>
+            <p><span class="dot"></span> Telefon: (+48) 606328555 </p>
+            <p><span class="dot"></span> Email: agata.j.m.majewska@gmail.com</p>
+            <p><span class="dot"></span> Miejsce: Wrocław</p>
         </div>
     </section>
 
