@@ -95,18 +95,23 @@
 
         .profile-image {
             flex: 1;
-            min-width: 300px;
+            height: 350px;
+            width: 301px;
             text-align: center;
+            border-radius: 50%; 
+            border: 15px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            overflow: hidden;
+            display: inline-block;
+            margin-right: 30px;
         }
 
         .profile-image img {
-            width: 100%;
-            max-width: 350px;
-            border-radius: 50%; /* Okrągłe zdjęcie jak na wizualizacji */
-            border: 15px solid white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            width: 400px;
+            margin-top: -150px;
+            margin-left: -91px;
         }
-
+        
         .about-text {
             flex: 1;
             min-width: 300px;
@@ -200,8 +205,11 @@
     
     <section id="o-mnie">
         <div class="about-wrapper">
-            <div class="profile-image">
-                <img src="https://via.placeholder.com/400x400" alt="Agata Morgowniczy-Majewska">
+            <div>
+                <div class="profile-image">
+                    <img src="img/agata.jpeg" alt="Agata Morgowniczy-Majewska">
+                    <!-- <div style="background-image: url(img/agata.jpeg); height: 400px; width: 400px; background-repeat: no-repeat; background-size: 50%;">A</div> -->
+                </div>
             </div>
             <div class="about-text">
                 <h2>O mnie</h2>
