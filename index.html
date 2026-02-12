@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Być w relacji - Agata Morgowniczy-Majewska</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fffaf5; /* Bardzo jasny, ciepły odcień brzoskwiniowy */
+            --accent-color: #d99a84; /* Przygaszony róż/pomarańcz z logo */
+            --text-color: #5a5450;
+            --header-bg: rgba(255, 250, 245, 0.9);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.7;
+            /* Subtelny motyw roślinny w tle */
+            background-image: 
+                url('https://www.transparenttextures.com/patterns/clean-gray-paper.png'),
+                radial-gradient(circle at top left, rgba(217, 154, 132, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at bottom right, rgba(143, 161, 140, 0.05) 0%, transparent 20%);
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: var(--header-bg);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(217, 154, 132, 0.1);
+        }
+
+        .logo-area h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            margin: 0;
+            color: var(--accent-color);
+            letter-spacing: 1px;
+        }
+
+        .logo-area p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.8;
+        }
+
+        nav {
+            margin-top: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 30px;
+        }
+
+        section {
+            margin-bottom: 100px;
+            scroll-margin-top: 120px;
+        }
+
+        /* Sekcja O mnie ze zdjęciem */
+        .about-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .profile-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .profile-image img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 50%; /* Okrągłe zdjęcie jak na wizualizacji */
+            border: 15px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        /* Sekcja Oferta - czysty tekst */
+        .offer-item {
+            margin-bottom: 40px;
+        }
+
+        .offer-item h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-color);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Kontakt */
+        .contact-box {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(217, 154, 132, 0.05);
+            display: inline-block;
+            min-width: 300px;
+        }
+
+        .contact-box p {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 13px;
+            opacity: 0.6;
+            border-top: 1px solid rgba(217, 154, 132, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .about-wrapper { flex-direction: column; text-align: center; }
+            h2::after { left: 50%; transform: translateX(-50%); }
+            nav a { margin: 0 10px; display: block; margin-bottom: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <h1>Być w relacji</h1>
+        <p>Agata Morgowniczy-Majewska</p>
+    </div>
+    <nav>
+        <a href="#o-mnie">O mnie</a>
+        <a href="#oferta">Oferta</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+</header>
+
+<div class="container">
+    
+    <section id="o-mnie">
+        <div class="about-wrapper">
+            <div class="profile-image">
+                <img src="https://via.placeholder.com/400x400" alt="Agata Morgowniczy-Majewska">
+            </div>
+            <div class="about-text">
+                <h2>O mnie</h2>
+                <p>Jestem na drugim roku szkolenia psychoterapeutycznego w <strong>Warszawskiej Szkole Psychoterapii Gestalt</strong>. Moja droga zawodowa to połączenie matematycznej logiki z głęboką empatią.</p>
+                <p>Ukończyłam studia z arteterapii na SWPS oraz Szkołę Trenerów Meritum. Na co dzień pracuję w szkole, gdzie wspieram młodych ludzi i ich rodziców w budowaniu autentycznych więzi.</p>
+                <p>Wierzę, że bezpieczna relacja to fundament, na którym można zbudować trwałą zmianę i zrozumienie własnych potrzeb.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="oferta">
+        <h2>Oferta</h2>
+        
+        <div class="offer-item">
+            <h3>Terapia indywidualna dorosłych</h3>
+            <p>Przestrzeń dla osób szukających wsparcia w kryzysach relacyjnych, zawodowych lub pragnących lepiej zrozumieć swoje emocje i schematy działania.</p>
+        </div>
+
+        <div class="offer-item">
+            <h3>Wsparcie dla młodych dorosłych</h3>
+            <p>Pomoc w odnalezieniu własnej drogi, budowaniu autonomii oraz radzeniu sobie z lękiem i trudnościami w bliskich relacjach.</p>
+        </div>
+
+        <div class="offer-item">
+            <h3>Grupy dla Rodziców</h3>
+            <p>Prowadzę cykliczne spotkania dla rodziców nastolatków, tworząc miejsce na wymianę doświadczeń i naukę bycia w relacji z dzieckiem w tym wymagającym czasie.</p>
+        </div>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Jeśli czujesz, że potrzebujesz rozmowy – zapraszam do kontaktu w bezpiecznej i pełnej akceptacji atmosferze.</p>
+        
+        <div class="contact-box">
+            <p><span class="dot"></span> Telefon: [Twój numer]</p>
+            <p><span class="dot"></span> Email: [Twój adres email]</p>
+            <p><span class="dot"></span> Miejsce: Warszawa / Online</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Być w relacji - Agata Morgowniczy-Majewska</p>
+    <p>Pracuję zgodnie z kodeksem etycznym EAGT i poddaję swoją pracę regularnej superwizji.</p>
+</footer>
+
+</body>
+</html>
